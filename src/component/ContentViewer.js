@@ -25,7 +25,7 @@ function ContentViewer({ children, showMeta = true }) {
                     }
                 }}
             >
-                {children.entity}
+                {children.entity.data}
             </ReactMarkdown>
         </div>
     </article>;

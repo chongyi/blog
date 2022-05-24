@@ -8,7 +8,7 @@ function List({ list }) {
     return <ul className="space-y-6">
         {(list && list.map(item => (
             <li className="space-y-2" key={item.id}>
-                <div className="text-xl font-bold"><Link to={`/content/${item.content_name}`}>{item.title}</Link></div>
+                <div className="text-xl font-bold"><Link to={`/content/${item.name}`}>{item.title}</Link></div>
                 <div className="text-sm text-stone-500">发布于 {dayjs(item.published_at).format('YYYY-MM-DD HH:mm')}</div>
             </li>
         )))}

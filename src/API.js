@@ -1,5 +1,5 @@
 export async function getContentList({ page = 1 } = {}) {
-    const resp = await fetch(`/api/content?page=${page}`)
+    const resp = await fetch(`/api/contents?page=${page}`)
 
     return await resp.json()
 }
